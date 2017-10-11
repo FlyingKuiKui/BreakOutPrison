@@ -27,7 +27,7 @@ char *printEnv(void){
 + (BOOL)isBreakOutPrison{
     // 判断是否存在越狱文件
     for (int i = 0; i < 5; i++) {
-        if ([[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithUTF8String:examineBreak_Tool_pathes[0]]]){
+        if ([[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithUTF8String:examineBreak_Tool_pathes[i]]]){
             return YES;
         }
     }
